@@ -11,10 +11,13 @@
     "prettier:check": "npx prettier --write .",
     "prettier:fix": "prettier --write .",
     "lint-prettier": "npm run lint:check && npm run prettier:check",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.ts": "npm run lint-prettier"
+    "src/**/*.ts": "npm run lint-prettier",
+    "*.js": "eslint --cache --fix",
+    "*.+(js|ts|json)": "prettier --write"
   },
   "keywords": [],
   "author": "",
