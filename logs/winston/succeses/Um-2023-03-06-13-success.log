@@ -10,3 +10,15 @@
   label: 'Uivarsity Management',
   timestamp: '2023-06-03T07:26:56.121Z'
 }
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-03T07:28:58.559Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-03T07:28:58.571Z'
+}

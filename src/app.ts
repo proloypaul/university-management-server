@@ -1,6 +1,7 @@
-import express, { Application, Request, Response } from 'express'
+import express, { Application } from 'express'
 import cors from 'cors'
-import userRouter from './app/modules/User/user.router'
+import { UserRouters } from './app/modules/User/user.router'
+import globalErrorHandler from './app/middleware/globalErrorHandler'
 
 const app: Application = express()
 app.use(cors())
@@ -12,9 +13,18 @@ app.use(express.urlencoded({ extended: true }))
 // to set NODE Environment using command //set NODE_ENV= production && npm run start
 
 // application routes
-app.use('/api/v1/users/', userRouter)
-app.get('/', async (req: Request, res: Response) => {
-  res.send('Hello World!')
-})
+app.use('/api/v1/users/', UserRouters)
+
+// app.get('/', (req: Request, res: Response, next: NextFunction) => {
+//   // res.send('Hello World!')
+//   // throw new Error('Orebaba Error') // it will be work on development environment
+//   throw new ApiError(400, 'Orebaba Error') // it will be work on production enviroment
+
+//   // we can also use next function in production enviroment for Error handling
+//   // next('Ore baba Error')
+// })
+
+// global error handler
+app.use(globalErrorHandler)
 
 export default app
