@@ -1,0 +1,12 @@
+{
+  message: 'Unhandle Promise rejection',
+  level: 'error',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-05T13:19:12.046Z'
+}
+{
+  message: 'Unhandle Promise rejection',
+  level: 'error',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-05T13:19:59.672Z'
+}

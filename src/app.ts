@@ -17,11 +17,12 @@ app.use('/api/v1/users/', UserRouters)
 
 // app.get('/', (req: Request, res: Response, next: NextFunction) => {
 //   // res.send('Hello World!')
-//   // throw new Error('Orebaba Error') // it will be work on development environment
-//   throw new ApiError(400, 'Orebaba Error') // it will be work on production enviroment
+//   throw new Error('Testing Error loger') // it will be work on development environment
+//   // throw new ApiError(400, 'Orebaba Error') // it will be work on production enviroment
 
 //   // we can also use next function in production enviroment for Error handling
 //   // next('Ore baba Error')
+//   // Promise.reject('Unhandle Promise rejection')
 // })
 
 // global error handler
