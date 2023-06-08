@@ -1,1 +1,1 @@
-export type errMessageGeneric = { path: string; message: string }
+export type errMessageGeneric = { path: string | number; message: string };
