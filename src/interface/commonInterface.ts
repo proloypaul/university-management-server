@@ -1,7 +1,7 @@
-import { errMessageGeneric } from './error'
+import { errMessageGeneric } from './error';
 
 export type IGenericErrorRespose = {
-  statusCode: number
-  message: string
-  errorMessage: errMessageGeneric[]
-}
+  statusCode: number;
+  message: string;
+  errorMessage: errMessageGeneric[];
+};

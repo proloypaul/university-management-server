@@ -1,19 +1,19 @@
-import express, { Application } from 'express'
-import cors from 'cors'
-import { UserRouters } from './app/modules/User/user.router'
-import globalErrorHandler from './app/middleware/globalErrorHandler'
+import express, { Application } from 'express';
+import cors from 'cors';
+import { UserRouters } from './app/modules/User/user.router';
+import globalErrorHandler from './app/middleware/globalErrorHandler';
 
-const app: Application = express()
-app.use(cors())
+const app: Application = express();
+app.use(cors());
 //parse
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 // const port = 3000
 
 // to set NODE Environment using command //set NODE_ENV= production && npm run start
 
 // application routes
-app.use('/api/v1/users/', UserRouters)
+app.use('/api/v1/users/', UserRouters);
 
 // app.get('/', (req: Request, res: Response, next: NextFunction) => {
 //   // res.send('Hello World!')
@@ -26,6 +26,6 @@ app.use('/api/v1/users/', UserRouters)
 // })
 
 // global error handler
-app.use(globalErrorHandler)
+app.use(globalErrorHandler);
 
-export default app
+export default app;
