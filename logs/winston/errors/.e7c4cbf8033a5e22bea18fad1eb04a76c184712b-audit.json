@@ -49,6 +49,21 @@
       "date": 1686226465701,
       "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-08-06-18-error.log",
       "hash": "dedfd55798e1ff75c18c7007f56c03f0a8a69870efa1cb6cb3203fa6f125bb85"
+    },
+    {
+      "date": 1686242784858,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-08-06-22-error.log",
+      "hash": "dc6ca70dc93069e64afc4c9a703520738f747b0dd5e96eba7320741041e0b12a"
+    },
+    {
+      "date": 1686244013754,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-08-06-23-error.log",
+      "hash": "395c6ee7d263dfee01b613955ddf87792110720df110a9d566cf9a8639c2169e"
+    },
+    {
+      "date": 1686247208483,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-09-06-00-error.log",
+      "hash": "d6977599c17cc0375796bbbc1eb57545e2a5786ec31e308d403f485c333ea6d2"
     }
   ],
   "hashType": "sha256"

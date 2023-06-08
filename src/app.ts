@@ -1,8 +1,7 @@
 import express, { Application } from 'express';
 import cors from 'cors';
-import { UserRouters } from './app/modules/User/user.router';
 import globalErrorHandler from './app/middleware/globalErrorHandler';
-import { academicSemesterRouters } from './app/modules/AcamedicSemester/academicSemester.router';
+import routes from './app/routes';
 
 const app: Application = express();
 app.use(cors());
@@ -14,8 +13,9 @@ app.use(express.urlencoded({ extended: true }));
 // to set NODE Environment using command //set NODE_ENV= production && npm run start
 
 // application routes
-app.use('/api/v1/users/', UserRouters);
-app.use('/api/v1/academic-semester', academicSemesterRouters);
+// app.use('/api/v1/users/', UserRouters);
+// app.use('/api/v1/academic-semester', academicSemesterRouters);
+app.use('/api/v1', routes);
 
 // app.get('/', (req: Request, res: Response, next: NextFunction) => {
 //   // res.send('Hello World!')
