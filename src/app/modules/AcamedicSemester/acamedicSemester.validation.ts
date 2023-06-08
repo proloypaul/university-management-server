@@ -1,0 +1,32 @@
+import { z } from 'zod';
+import {
+  academicSemesterCodes,
+  academicSemesterMonths,
+  academicSemesterTitels,
+} from './academicSemester.constrains';
+
+// req validation
+const createAcademicSemesterZodSchema = z.object({
+  body: z.object({
+    title: z.enum([...academicSemesterTitels] as [string, ...string[]], {
+      required_error: 'title is required',
+    }),
+    year: z.number({
+      required_error: 'year is required',
+    }),
+    code: z.enum([...academicSemesterCodes] as [string, ...string[]], {
+      required_error: 'code is required',
+    }),
+    startMonth: z.enum([...academicSemesterMonths] as [string, ...string[]], {
+      required_error: 'startMonth is required',
+    }),
+    endMonth: z.enum([...academicSemesterMonths] as [string, ...string[]], {
+      required_error: 'endMonth is required',
+    }),
+  }),
+});
+//   await createUserZodSchema.parseAsync(req)
+
+export const academicSemesterValidation = {
+  createAcademicSemesterZodSchema,
+};
