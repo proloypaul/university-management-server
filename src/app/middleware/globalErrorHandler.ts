@@ -7,6 +7,7 @@ import ApiError from '../../errors/ApiError';
 import { loggerError } from '../../shared/logger';
 import { ZodError } from 'zod';
 import handleZodError from '../../errors/handleZodError';
+import handleCasrError from '../../errors/handleCasrError';
 
 // global error handler  in production environment
 const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
@@ -39,6 +40,12 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
     statusCode = simplefieError.statusCode;
     message = simplefieError.message;
     errorMessage = simplefieError.errorMessage;
+  } else if (error?.name === 'CastError') {
+    // res.status(200).json({ error });
+    const simplefileError = handleCasrError(error);
+    statusCode = simplefileError.statusCode;
+    message = simplefileError.message;
+    errorMessage = simplefileError.errorMessage;
   } else if (error instanceof Error) {
     message = error?.message;
     errorMessage = error?.message
