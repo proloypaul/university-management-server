@@ -85,8 +85,35 @@ const getAcademicSemesterSingleDataToDB = async (
 
   return result;
 };
+
+// update acamdemic semester
+const updateAcademicSemesterToDB = async (
+  id: string,
+  updatedData: Partial<IacademicSemester>
+): Promise<IacademicSemester | null> => {
+  if (
+    updatedData.title &&
+    updatedData.code &&
+    academicSemesterTitleCodeMapper[updatedData.title] !== updatedData.code
+  ) {
+    throw new ApiError(
+      StatusCodes.BAD_REQUEST,
+      `Invalid semester code accepted code ${updatedData.title}: ${
+        academicSemesterTitleCodeMapper[updatedData.title]
+      }`
+    );
+  }
+  const result = await AcademicSemester.findOneAndUpdate(
+    { _id: id },
+    updatedData,
+    { new: true }
+  );
+  return result;
+};
+
 export const academicSemesterService = {
   createAcademicSemesterToDB,
   getAllAcademicSemesterToDB,
   getAcademicSemesterSingleDataToDB,
+  updateAcademicSemesterToDB,
 };

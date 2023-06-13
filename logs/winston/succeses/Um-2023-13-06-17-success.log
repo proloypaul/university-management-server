@@ -1,0 +1,84 @@
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:03:25.028Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:03:25.036Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:06:00.001Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:06:00.014Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:19:30.623Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:19:30.638Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:27:16.168Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:27:16.194Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:33:28.286Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:33:28.304Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:34:32.957Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:34:32.979Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:35:03.671Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-13T11:35:03.692Z'
+}

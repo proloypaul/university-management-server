@@ -114,6 +114,16 @@
       "date": 1686646958078,
       "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-13-06-15-error.log",
       "hash": "3a0c966bfc1de4e79f9c551dc4223facad5984c294b8b88e932dc467d50dd82b"
+    },
+    {
+      "date": 1686651056744,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-13-06-16-error.log",
+      "hash": "5c6f64ac09f79023e7f39c84c764e8ca3572d50bb52026b34a43e9ef880ca0a9"
+    },
+    {
+      "date": 1686654201094,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-13-06-17-error.log",
+      "hash": "092840fefde270f9aae3a1cbce9504dd5d9e9e7f2c9c2f74ee96553384035c49"
     }
   ],
   "hashType": "sha256"
