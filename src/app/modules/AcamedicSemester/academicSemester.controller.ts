@@ -29,9 +29,11 @@ const createAcademicSemester = catchAsync(
 );
 const getAllAcademicSemester = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
+    const filters = pick(req.query, ['searchTerm', 'title', 'year', 'code']); // both are constant we can declare them in constrain file
     const paginationOptions = pick(req.query, paginationFields);
     // console.log(paginationOptions);
     const result = await academicSemesterService.getAllAcademicSemesterToDB(
+      filters,
       paginationOptions
     );
 
@@ -46,7 +48,24 @@ const getAllAcademicSemester = catchAsync(
   }
 );
 
+const getAcademicSemesterSingleData = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const id = req.params.id;
+    const result =
+      await academicSemesterService.getAcademicSemesterSingleDataToDB(id);
+
+    sendResponse<IacademicSemester>(res, {
+      statusCode: StatusCodes.OK,
+      success: true,
+      message: 'get single data of academicSemester',
+      data: result,
+    });
+
+    next();
+  }
+);
 export const AcademicSemesterController = {
   createAcademicSemester,
   getAllAcademicSemester,
+  getAcademicSemesterSingleData,
 };
