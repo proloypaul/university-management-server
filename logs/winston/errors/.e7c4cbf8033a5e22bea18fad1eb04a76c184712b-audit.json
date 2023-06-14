@@ -134,6 +134,11 @@
       "date": 1686744589140,
       "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-14-06-18-error.log",
       "hash": "9525ae069c0635e93dae392be1a955f7d688271c43a57b349e6093999ef2f90a"
+    },
+    {
+      "date": 1686747682492,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-14-06-19-error.log",
+      "hash": "5e8aaeecaa04837cbb3d899f5ea2fabac42a20c809a092f5ebfc6c9d9b679bbd"
     }
   ],
   "hashType": "sha256"

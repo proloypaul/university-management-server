@@ -8,3 +8,7 @@ export type academicFacultyModel = Model<
   IacademicFaculty,
   Record<string, unknown>
 >;
+
+export type IacademicFacultyFilters = {
+  searchTerm: string;
+};
