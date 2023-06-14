@@ -27,7 +27,7 @@ const createAcademicSemesterToDB = async (
 };
 
 const getAllAcademicSemesterToDB = async (
-  filters: IacademicSemesterFilters,
+  filters: Partial<IacademicSemesterFilters>,
   paginationOptions: IpaginationOptions
 ): Promise<IGenericAcamedicSemesterResponse<IacademicSemester[]>> => {
   const { page, limit, skip, sortBy, sortOrder } =
