@@ -68,7 +68,39 @@ const getAllAcademicFacultyToDB = async (
   };
 };
 
+const getSingleAcademicFacultyToDB = async (
+  id: string
+): Promise<IacademicFaculty | null> => {
+  const result = await AcademicFaculty.findById(id);
+
+  return result;
+};
+
+const updateAcademicFacultyToDB = async (
+  id: string,
+  updatedData: Partial<IacademicFaculty>
+): Promise<IacademicFaculty | null> => {
+  const result = await AcademicFaculty.findOneAndUpdate(
+    { _id: id },
+    updatedData,
+    { new: true }
+  );
+  return result;
+};
+
+// delete academic Semester
+const deleteAcademicSemesterToDB = async (
+  id: string
+): Promise<IacademicFaculty | null> => {
+  const result = await AcademicFaculty.findByIdAndDelete(id);
+
+  return result;
+};
+
 export const AcademicFacultyService = {
   createAcademicFacultyToDB,
   getAllAcademicFacultyToDB,
+  getSingleAcademicFacultyToDB,
+  updateAcademicFacultyToDB,
+  deleteAcademicSemesterToDB,
 };

@@ -27,7 +27,7 @@ const getAllAcademicFaculty = catchAsync(
   async (req: Request, res: Response) => {
     const filters = pick(req.query, ['searchTerm', 'title']);
     const paginationOptions = pick(req.query, paginationFields);
-    console.log(filters);
+    // console.log(filters);
     const result = await AcademicFacultyService.getAllAcademicFacultyToDB(
       filters,
       paginationOptions
@@ -43,7 +43,61 @@ const getAllAcademicFaculty = catchAsync(
   }
 );
 
+const getSingleAcademicFaculty = catchAsync(
+  async (req: Request, res: Response) => {
+    const id = req.params.id;
+    const result = await AcademicFacultyService.getSingleAcademicFacultyToDB(
+      id
+    );
+
+    sendResponse<IacademicFaculty>(res, {
+      statusCode: StatusCodes.OK,
+      success: true,
+      message: 'get single data of academicFaculty',
+      data: result,
+    });
+
+    // next(); it use to pass error in global handler to check error
+  }
+);
+
+const updateAcademicFaculty = catchAsync(
+  async (req: Request, res: Response) => {
+    const id = req.params.id;
+    const updatedData = req.body;
+    const result = await AcademicFacultyService.updateAcademicFacultyToDB(
+      id,
+      updatedData
+    );
+
+    sendResponse<IacademicFaculty>(res, {
+      statusCode: StatusCodes.OK,
+      success: true,
+      message: 'Academic faculty updated successfully',
+      data: result,
+    });
+
+    // next(); it use to pass error in global handler to check error
+  }
+);
+
+const deleteAcademicFaculty = catchAsync(
+  async (req: Request, res: Response) => {
+    const id = req.params.id;
+    const result = await AcademicFacultyService.deleteAcademicSemesterToDB(id);
+
+    sendResponse<IacademicFaculty>(res, {
+      statusCode: StatusCodes.OK,
+      success: true,
+      message: 'Academic Faculty Deleted successfully',
+      data: result,
+    });
+  }
+);
 export const AcademicFacultyController = {
   createAcademicFaculty,
   getAllAcademicFaculty,
+  getSingleAcademicFaculty,
+  updateAcademicFaculty,
+  deleteAcademicFaculty,
 };
