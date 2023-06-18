@@ -9,6 +9,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 // const port = 3000
 
+// to set NODE Environment using command //set NODE_ENV= production && npm run start
+
 // application routes
 app.use('/api/v1/users/', userRouter)
 app.get('/', async (req: Request, res: Response) => {
