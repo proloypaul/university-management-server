@@ -9,6 +9,136 @@
       "date": 1685777212107,
       "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-03-06-13-error.log",
       "hash": "509987d6335028887aeb9595769e4e62cdd43f818a9a3325df8b688aa03aea99"
+    },
+    {
+      "date": 1685884888531,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-04-06-19-error.log",
+      "hash": "3fa4d8dd5ef57b9cce91ed0bbc049b11c1abac2ac1b88e0a32a51f65c5baaae6"
+    },
+    {
+      "date": 1685895428101,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-04-06-22-error.log",
+      "hash": "bb793f0468aa18ffd6d8535f17989759e700e16efd49225e8b5680f119ed6f35"
+    },
+    {
+      "date": 1685966477298,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-05-06-18-error.log",
+      "hash": "a1f755390ded8686872ea259d10734abf8c439c2e479b44358bfe71b7df554ef"
+    },
+    {
+      "date": 1685970359496,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-05-06-19-error.log",
+      "hash": "ab4f8f342218eb0492f9c0a0f8455b0de669a39d750c9421aa12760633a25e67"
+    },
+    {
+      "date": 1686057268065,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-06-06-19-error.log",
+      "hash": "c8c9cd5e536254a4bb8cf6ff1914b71a0f7739d6dc626351dbf4ff684828548c"
+    },
+    {
+      "date": 1686203106976,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-08-06-11-error.log",
+      "hash": "92797be7f22f0dc70321e09de669c6b13f2bc2174a53594eb941e712a70c24b4"
+    },
+    {
+      "date": 1686222995474,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-08-06-17-error.log",
+      "hash": "73beb055c34c3a7b85f824816c29a94e8bd98e955a5095832309ef072ad58c05"
+    },
+    {
+      "date": 1686226465701,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-08-06-18-error.log",
+      "hash": "dedfd55798e1ff75c18c7007f56c03f0a8a69870efa1cb6cb3203fa6f125bb85"
+    },
+    {
+      "date": 1686242784858,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-08-06-22-error.log",
+      "hash": "dc6ca70dc93069e64afc4c9a703520738f747b0dd5e96eba7320741041e0b12a"
+    },
+    {
+      "date": 1686244013754,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-08-06-23-error.log",
+      "hash": "395c6ee7d263dfee01b613955ddf87792110720df110a9d566cf9a8639c2169e"
+    },
+    {
+      "date": 1686247208483,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-09-06-00-error.log",
+      "hash": "d6977599c17cc0375796bbbc1eb57545e2a5786ec31e308d403f485c333ea6d2"
+    },
+    {
+      "date": 1686378058477,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-10-06-12-error.log",
+      "hash": "e07b18a37f6ca78c0d8bf22751b9528af816dcf3d94a687c270b2a1eb6bebae2"
+    },
+    {
+      "date": 1686380753126,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-10-06-13-error.log",
+      "hash": "eb96c31c182dbb9c77a9fffeba6d4bda72f8d8eda6b75c6175db6ffbc8e1ab8b"
+    },
+    {
+      "date": 1686384406704,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-10-06-14-error.log",
+      "hash": "c29b1188017d2476b5de9b7f9cd8e82a8d3fb4e87d4c024315e7741565da024c"
+    },
+    {
+      "date": 1686483164878,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-11-06-17-error.log",
+      "hash": "fd9bb79c9815033a8dfa8f740557f565a5fb7160dda5bfae5ef2c58faf02a46f"
+    },
+    {
+      "date": 1686486595574,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-11-06-18-error.log",
+      "hash": "37ecf986df6f183c2baca3f5a066a3f7c988ea0af141f4fd8bd9916f896a4331"
+    },
+    {
+      "date": 1686493773439,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-11-06-20-error.log",
+      "hash": "1fa19058e846ac4b231062505b61ffd961b6d0ba7c5814dff1d283494d19974f"
+    },
+    {
+      "date": 1686495821073,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-11-06-21-error.log",
+      "hash": "e69c657f27dc3b334df7a6daa6241482af9085d2240cea22402d58b81c5849d0"
+    },
+    {
+      "date": 1686503160043,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-11-06-23-error.log",
+      "hash": "766fb2cba24ffceae69bf306116d71c1f8da15eee42ffdd2bc5c0c6c33061201"
+    },
+    {
+      "date": 1686646760949,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-13-06-14-error.log",
+      "hash": "846e7b9c9e6a9f72a25743fc76435336fab91de63d313015d701d70babee33dd"
+    },
+    {
+      "date": 1686646958078,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-13-06-15-error.log",
+      "hash": "3a0c966bfc1de4e79f9c551dc4223facad5984c294b8b88e932dc467d50dd82b"
+    },
+    {
+      "date": 1686651056744,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-13-06-16-error.log",
+      "hash": "5c6f64ac09f79023e7f39c84c764e8ca3572d50bb52026b34a43e9ef880ca0a9"
+    },
+    {
+      "date": 1686654201094,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-13-06-17-error.log",
+      "hash": "092840fefde270f9aae3a1cbce9504dd5d9e9e7f2c9c2f74ee96553384035c49"
+    },
+    {
+      "date": 1686657609000,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-13-06-18-error.log",
+      "hash": "a920053198bdf218e2ce6ced5b1912f92a76bd4b7ff0b5881b35578278294d74"
+    },
+    {
+      "date": 1686744589140,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-14-06-18-error.log",
+      "hash": "9525ae069c0635e93dae392be1a955f7d688271c43a57b349e6093999ef2f90a"
+    },
+    {
+      "date": 1686747682492,
+      "name": "G:\\level_2_ProgrammingHero\\project-management-SDLC\\university-management-server\\logs\\winston\\errors\\Um-2023-14-06-19-error.log",
+      "hash": "5e8aaeecaa04837cbb3d899f5ea2fabac42a20c809a092f5ebfc6c9d9b679bbd"
     }
   ],
   "hashType": "sha256"
