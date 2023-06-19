@@ -19,6 +19,8 @@
     "*.js": "eslint --cache --fix",
     "*.+(js|ts|json)": "prettier --write"
   },
+
+  
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -21,6 +21,9 @@ const acamedicSemestarSchema = new Schema<IacademicSemester>(
   },
   {
     timestamps: true,
+    toJSON: {
+      virtuals: true,
+    },
   }
 );
 // here set some condition to  create academicSemester model

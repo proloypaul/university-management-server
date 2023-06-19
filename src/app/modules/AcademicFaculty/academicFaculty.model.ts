@@ -10,6 +10,9 @@ const acamedicFacultySchema = new Schema<IacademicFaculty>(
   },
   {
     timestamps: true,
+    toJSON: {
+      virtuals: true,
+    },
   }
 );
 
