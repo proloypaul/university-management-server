@@ -66,7 +66,9 @@ const getAllAcademicSemesterToDB = async (
     .skip(skip)
     .limit(limit);
 
-  const totalAcadmicSemester = await AcademicSemester.countDocuments();
+  const totalAcadmicSemester = await AcademicSemester.countDocuments(
+    totalQueryOfAcademicSemesterData
+  );
 
   return {
     meta: {
