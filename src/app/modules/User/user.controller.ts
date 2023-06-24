@@ -5,7 +5,7 @@ import sendResponse from '../../../shared/sendResponse';
 import { StatusCodes } from 'http-status-codes';
 
 const createUserToDB = catchAsync(async (req: Request, res: Response) => {
-  const { userData } = req.body;
+  const { ...userData } = req.body;
   const result = await UserService.createUser(userData);
 
   // res.status(200).json({

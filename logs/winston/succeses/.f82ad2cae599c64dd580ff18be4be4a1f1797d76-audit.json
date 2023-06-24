@@ -1,20 +1,25 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "H:\\ProgrammingHero level 2\\universityProject_management\\university-management-server\\logs\\winston\\succeses\\.f82ad2cae599c64dd580ff18be4be4a1f1797d76-audit.json",
+  "files": [
+    {
+      "date": 1687115543056,
+      "name": "H:\\ProgrammingHero level 2\\universityProject_management\\university-management-server\\logs\\winston\\succeses\\Um-2023-18-06-20-success.log",
+      "hash": "0a5e11a7a3fbe49800ef94f07c14e2636715ac7fc313e3556bd90cbd832991f9"
     },
-    "auditLog": "H:\\ProgrammingHero level 2\\universityProject_management\\university-management-server\\logs\\winston\\succeses\\.f82ad2cae599c64dd580ff18be4be4a1f1797d76-audit.json",
-    "files": [
-        {
-            "date": 1687115543056,
-            "name": "H:\\ProgrammingHero level 2\\universityProject_management\\university-management-server\\logs\\winston\\succeses\\Um-2023-18-06-20-success.log",
-            "hash": "0a5e11a7a3fbe49800ef94f07c14e2636715ac7fc313e3556bd90cbd832991f9"
-        },
-        {
-            "date": 1687171527946,
-            "name": "H:\\ProgrammingHero level 2\\universityProject_management\\university-management-server\\logs\\winston\\succeses\\Um-2023-19-06-11-success.log",
-            "hash": "33319219289f0b8af0d89ec0966954c35918724a75b197be5c206857dca70d3b"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1687171527946,
+      "name": "H:\\ProgrammingHero level 2\\universityProject_management\\university-management-server\\logs\\winston\\succeses\\Um-2023-19-06-11-success.log",
+      "hash": "33319219289f0b8af0d89ec0966954c35918724a75b197be5c206857dca70d3b"
+    },
+    {
+      "date": 1687622723890,
+      "name": "H:\\ProgrammingHero level 2\\universityProject_management\\university-management-server\\logs\\winston\\succeses\\Um-2023-24-06-22-success.log",
+      "hash": "61e4affb7096f5d65358f3d951def8ba4f52bec9b47b1c4ab317964fb69779af"
+    }
+  ],
+  "hashType": "sha256"
 }
