@@ -18,7 +18,7 @@ const createStudent = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: StatusCodes.OK,
     success: true,
-    message: 'User created successfully',
+    message: 'student as user created successfully',
     data: result,
   });
   // next(); it use to pass error in global handler to check error
@@ -32,11 +32,25 @@ const createFaculty = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: StatusCodes.OK,
     success: true,
-    message: 'User created successfully',
+    message: 'Faculty as user created successfully',
     data: result,
   });
 });
+
+const createAdmin = catchAsync(async (req: Request, res: Response) => {
+  const { admin, ...userData } = req.body;
+  const result = await UserService.createAdminToDB(admin, userData);
+
+  sendResponse(res, {
+    statusCode: StatusCodes.OK,
+    success: true,
+    message: 'Admin as user created successfully',
+    data: result,
+  });
+});
+
 export const UserController = {
   createStudent,
   createFaculty,
+  createAdmin,
 };
