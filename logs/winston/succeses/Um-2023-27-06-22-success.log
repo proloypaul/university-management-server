@@ -1,0 +1,48 @@
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-27T16:15:45.441Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-27T16:15:45.460Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-27T16:29:33.675Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-27T16:29:33.698Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-27T16:31:54.851Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-27T16:31:54.881Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-27T16:32:35.720Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-06-27T16:32:35.737Z'
+}

@@ -14,6 +14,16 @@
       "date": 1687845648293,
       "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\errors\\Um-2023-27-06-12-error.log",
       "hash": "470abb58ce933889ca3834434bfa2d236631ab72f80f4062c2215a5b32977792"
+    },
+    {
+      "date": 1687871497410,
+      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\errors\\Um-2023-27-06-19-error.log",
+      "hash": "e886c7b9e9589ebbf8c0d9092f75127efe99e87e58f649a02c06d2de7b5abad1"
+    },
+    {
+      "date": 1687882537722,
+      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\errors\\Um-2023-27-06-22-error.log",
+      "hash": "b4ea51fdf1e3362ee529376e3506d690fdb18218abeab080ef4f5c4aae494160"
     }
   ],
   "hashType": "sha256"
