@@ -6,13 +6,14 @@ import { IloginUser } from './auth.interface';
 const loginUserToDB = async (payload: IloginUser) => {
   const { id, password } = payload;
 
-  const user = new User();
+  const isUserExist = await User.isUserExist(id);
 
-  const isUserExist = await user.isUserExist(id);
-
+  if (!isUserExist) {
+    throw new ApiError(StatusCodes.NOT_FOUND, 'User does not exit');
+  }
   if (
     isUserExist?.password &&
-    !(await user.isPasswordMatched(password, isUserExist?.password))
+    !(await User.isPasswordMatched(password, isUserExist?.password))
   ) {
     throw new ApiError(StatusCodes.UNAUTHORIZED, 'Incorrect Password');
   }

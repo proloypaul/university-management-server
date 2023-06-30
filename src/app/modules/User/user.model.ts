@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-this-alias */
 import { Schema, model } from 'mongoose';
-import { IUser, IUserMethods, UserModel } from './user.interface';
+import { IUser, UserModel } from './user.interface';
 import bcrypt from 'bcrypt';
 import config from '../../../config';
 
-const userSchema = new Schema<IUser, UserModel, IUserMethods>(
+const userSchema = new Schema<IUser, UserModel>(
   {
     id: {
       type: String,
@@ -57,21 +57,46 @@ userSchema.pre('save', async function (next) {
 
 export const User = model<IUser, UserModel>('User', userSchema);
 
-userSchema.methods.isUserExist = async function (
+// use of static method
+userSchema.statics.isUserExist = async function (
   id: string
-): Promise<Partial<IUser | null>> {
+): Promise<Pick<
+  IUser,
+  'id' | 'password' | 'role' | 'needsPasswordChange'
+> | null> {
   const user = await User.findOne(
     { id },
-    { id: 1, password: 1, needsPasswordChange: 1 }
+    { id: 1, password: 1, role: 1, needsPasswordChange: 1 }
   );
 
   return user;
 };
 
-userSchema.methods.isPasswordMatched = async function (
+userSchema.statics.isPasswordMatched = async function (
   givenPassword: string,
   savePassword: string
 ): Promise<boolean> {
   const isMatch = await bcrypt.compare(givenPassword, savePassword);
   return isMatch;
 };
+
+// use of instance method
+
+// userSchema.methods.isUserExist = async function (
+//   id: string
+// ): Promise<Partial<IUser | null>> {
+//   const user = await User.findOne(
+//     { id },
+//     { id: 1, password: 1, needsPasswordChange: 1 }
+//   );
+
+//   return user;
+// };
+
+// userSchema.methods.isPasswordMatched = async function (
+//   givenPassword: string,
+//   savePassword: string
+// ): Promise<boolean> {
+//   const isMatch = await bcrypt.compare(givenPassword, savePassword);
+//   return isMatch;
+// };
