@@ -55,8 +55,6 @@ userSchema.pre('save', async function (next) {
   next();
 });
 
-export const User = model<IUser, UserModel>('User', userSchema);
-
 // use of static method
 userSchema.statics.isUserExist = async function (
   id: string
@@ -79,6 +77,8 @@ userSchema.statics.isPasswordMatched = async function (
   const isMatch = await bcrypt.compare(givenPassword, savePassword);
   return isMatch;
 };
+
+export const User = model<IUser, UserModel>('User', userSchema);
 
 // use of instance method
 

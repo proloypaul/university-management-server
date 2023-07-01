@@ -1,0 +1,24 @@
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-07-01T11:25:32.590Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-07-01T11:25:32.600Z'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-07-01T11:44:34.216Z'
+}
+{
+  message: 'University management server running port:  5000',
+  level: 'info',
+  label: 'Uivarsity Management',
+  timestamp: '2023-07-01T11:44:34.226Z'
+}
