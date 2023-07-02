@@ -34,6 +34,11 @@
       "date": 1688213507030,
       "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\errors\\Um-2023-01-07-18-error.log",
       "hash": "48723a7b3d73751ae491d038156bdce8e18ad68aabf33a55aa730dd6af5a18f6"
+    },
+    {
+      "date": 1688227326937,
+      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\errors\\Um-2023-01-07-22-error.log",
+      "hash": "ddfedb071ee73e00a75778786e3b4ba7fd59a87e89535e6250805607cdcde57f"
     }
   ],
   "hashType": "sha256"
