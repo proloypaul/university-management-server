@@ -6,69 +6,14 @@
   "auditLog": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\.2b299c8033f146109e9bd9479038d56696f6bc4c-audit.json",
   "files": [
     {
-      "date": 1687843929040,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-27-06-11-success.log",
-      "hash": "d1db45c28be19e7a27584fb30dd5df44bfb74461e03d3dc174694e9e71c80188"
+      "date": 1689870260677,
+      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-20-07-22-success.log",
+      "hash": "15af66de9ec589668a05906e0885f758b5e482de71be911dba852a8dfb3568c5"
     },
     {
-      "date": 1687845648286,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-27-06-12-success.log",
-      "hash": "dbcb39db0bc4797b63e52af98cc18312ad0bc73186b226753089951d94f6f18b"
-    },
-    {
-      "date": 1687871497403,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-27-06-19-success.log",
-      "hash": "d57d725ceb20ea783e59b57ee6626cfae8f3e12b6197505887b842d31bdd1579"
-    },
-    {
-      "date": 1687882537715,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-27-06-22-success.log",
-      "hash": "2eb5e008afff2218acd825f8b5ceb358f6f1bd2619e6326658666977433eba15"
-    },
-    {
-      "date": 1688210728578,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-01-07-17-success.log",
-      "hash": "63ec33f6585882951c14aeedd4caffaa2cf9174c8dd04ddeb54b7dfc0b87b0eb"
-    },
-    {
-      "date": 1688213507025,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-01-07-18-success.log",
-      "hash": "4c2eec13d910b030f1f4f2f8af03359f2b3cab2e466092119f4bbdbcd228395d"
-    },
-    {
-      "date": 1688227326928,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-01-07-22-success.log",
-      "hash": "ed7a234181b4c8225d157f2c667b1bf65970235409b65aecd46a2295549e46b1"
-    },
-    {
-      "date": 1688303323773,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-02-07-19-success.log",
-      "hash": "6899769d249689422b4bb39fa6b44636de382cbd2f573b66c09dd09ed2b36efb"
-    },
-    {
-      "date": 1688306412551,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-02-07-20-success.log",
-      "hash": "a20f09541e4cc23a00b09cf98531980ad2019d14f9c8217f4c3bdc3423c0371a"
-    },
-    {
-      "date": 1688343672424,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-03-07-06-success.log",
-      "hash": "16e9d2537079a8164389b7ba471430abb0286637316c03b18760124dc6b34358"
-    },
-    {
-      "date": 1688385749262,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-03-07-18-success.log",
-      "hash": "3991b09ca777c1af4319330b78a307ac42cdb6242c5ec7d07d7ac7297e335a31"
-    },
-    {
-      "date": 1688389987473,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-03-07-19-success.log",
-      "hash": "1d5f69fbbca81728c0ee8d8736c77586e7cee70df99f67ea9ce2f88e85b8c6cb"
-    },
-    {
-      "date": 1688399852234,
-      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-03-07-21-success.log",
-      "hash": "7d3d3df05537e8f603db8a4ea2d27f75b058f7123ab06f1adfcfe70518f5cffd"
+      "date": 1690040352663,
+      "name": "C:\\programmingHero-level2\\university-management-server\\logs\\winston\\succeses\\Um-2023-22-07-21-success.log",
+      "hash": "e015386aec05f6051207fa2933649f83a015389153d80c3061ddd0a3e721be28"
     }
   ],
   "hashType": "sha256"

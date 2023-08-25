@@ -11,14 +11,21 @@ const auth =
     try {
       //get authorization token
       const token = req.headers.authorization;
-      console.log('token', token);
+      // console.log('token', token);
       if (!token) {
         throw new ApiError(StatusCodes.UNAUTHORIZED, 'You are not authorized');
       }
       // verify token
       let verifiedUser = null;
 
-      verifiedUser = jwtHelpers.verifyToken(token, config.jwt.secret as Secret);
+      try {
+        verifiedUser = jwtHelpers.verifyToken(
+          token,
+          config.jwt.secret as Secret
+        );
+      } catch (error) {
+        throw new ApiError(StatusCodes.BAD_REQUEST, 'Invalid refreshToken');
+      }
 
       req.user = verifiedUser; // role  , userid
 
