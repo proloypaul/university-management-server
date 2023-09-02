@@ -11,23 +11,15 @@ const auth =
     try {
       //get authorization token
       const token = req.headers.authorization;
-      // console.log('token', token);
       if (!token) {
         throw new ApiError(StatusCodes.UNAUTHORIZED, 'You are not authorized');
       }
       // verify token
       let verifiedUser = null;
 
-      try {
-        verifiedUser = jwtHelpers.verifyToken(
-          token,
-          config.jwt.secret as Secret
-        );
-      } catch (error) {
-        throw new ApiError(StatusCodes.BAD_REQUEST, 'Invalid refreshToken');
-      }
+      verifiedUser = jwtHelpers.verifyToken(token, config.jwt.secret as Secret);
 
-      req.user = verifiedUser; // role  , userid
+      req.user = verifiedUser; // add user into Express Request using index.d.ts file
 
       // role diye guard korar jnno
       if (requiredRoles.length && !requiredRoles.includes(verifiedUser.role)) {

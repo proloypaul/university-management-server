@@ -3,12 +3,13 @@ import ApiError from '../../../errors/ApiError';
 import { User } from '../User/user.model';
 import {
   ILoginUserResponse,
+  IPasswordChangeData,
   IRefreshTokenResponse,
   IloginUser,
 } from './auth.interface';
 import { jwtHelpers } from '../../../helpers/jwtHelpers';
 import config from '../../../config';
-import { Secret } from 'jsonwebtoken';
+import { JwtPayload, Secret } from 'jsonwebtoken';
 
 const loginUserToDB = async (
   payload: IloginUser
@@ -78,7 +79,55 @@ const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
   };
 };
 
+const changePasswrodToDB = async (
+  user: JwtPayload | null,
+  passwordData: IPasswordChangeData
+) => {
+  const { oldPassword, newPassword } = passwordData;
+
+  const isUserExist = await User.findOne({ id: user?.userId }).select(
+    '+password'
+  ); // here .select('+password') use for show the password
+  // check user exist or not
+  if (!isUserExist) {
+    throw new ApiError(StatusCodes.NOT_FOUND, 'User does not exist');
+  }
+
+  // check user oldPassword Match or not
+  if (
+    isUserExist.password &&
+    !(await User.isPasswordMatched(oldPassword, isUserExist.password))
+  ) {
+    throw new ApiError(StatusCodes.UNAUTHORIZED, 'Old password is incorrect');
+  }
+
+  // another way to changePassword update
+
+  // // hash password before saving
+  // const newHashedPassword = await bcrypt.hash(
+  //   newPassword,
+  //   Number(config.bycrypt_salt_rounds)
+  // );
+
+  // const query = { id: user?.userId };
+  // const updatedData = {
+  //   password: newHashedPassword,  //
+  //   needsPasswordChange: false,
+  //   passwordChangedAt: new Date(), //
+  // };
+
+  // await User.findOneAndUpdate(query, updatedData);
+  // another way finished here
+
+  // update user according to user given newPassword
+  isUserExist.password = newPassword;
+  isUserExist.needsPasswordChange = false;
+  // updating using save
+  isUserExist.save();
+};
+
 export const AuthService = {
   loginUserToDB,
   refreshToken,
+  changePasswrodToDB,
 };
